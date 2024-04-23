@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="home.master.cs" Inherits="gemstone.home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Gemstone</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+
+    <style type="text/css">
+    </style>
+
+</head>
+<body>
+
+    
+
+
+
+    <form id="form1" runat="server">
+        <div>
+                <div class="header">
+<div class="top">
+<a><img src="assets/headerLogo.png" alt="logo"/></a>
+<input type="text" placeholder="Search..">
+
+<div class="dropdown">
+<button><img src="assets/dropdownL.png" alt="DropDown"/></button>
+<div class="content">
+<a>Profile</a>
+<a>Bidding history</a>
+<a>Log out</a>
+</div>
+</div>
+
+</div>
+<!-- /div.top -->
+<div class="nav">
+<ul>
+    <li><a href="Home.aspx">Home</a></li>
+    <li><a href="jewleryPage.aspx">Jewlery</a></li>
+    <li><a href="auctionPage.aspx">Auction</a></li>
+    <li><a href="aboutUsPage.aspx">About Us</a></li>
+</ul>
+</div>
+<!--/div.nav -->
+
+</div>
+<!--/div.header-->
+
+<!-- --the rest of the page-- -->
+
+<!-- body -->
+
+
+
+    <asp:ContentPlaceHolder ID="mainContent" runat="server"></asp:ContentPlaceHolder>
+
+<!-- /body -->
+
+
+<!-- --the footer area-- -->
+
+<footer>
+  <table>
+ 
+  <td>
+  <!-- big logo -->
+ 
+  <img src="assets/footerLogo.png" alt="big logo"/>
+
+  </td>
+  <td>
+    <p class="t1">Care Center</p>
+  <p class="t2"><a href='#'>Contact us</a></p>
+  <p class="t2"><a href='#'>Track your order</a></p>
+  <p class="t2"><a href='#'>FAQs</a></p>
+  <br>
+  <br>
+  </td>
+  <td>
+  <p class="t1">Privacy</p>
+  <p class="t2"><a href='#'>Privacy policy</a></p>
+  <p class="t2"><a href='#'>Terms and conditions</a></p>
+  <p class="t2"><a href='#'>About us</a></p>
+  <br>
+  <br>
+  </td>
+  <td>
+  <p class="t1">Go To</p>
+  <p class="t2"><a href='#'>Home</a></p>
+  <p class="t2"><a href='#'>Jewlery</a></p>
+  <p class="t2"><a href='#'>Auction</a></p>
+  <p class="t2"><a href='#'>Profile</a></p>
+  </td>
+  <td>
+  <p class="t1">Get to know us</p>
+  <div class="socials">
+  <a href='#'><img src="assets/linkedin.png" alt="li"/></a>
+  <a href='#'><img src="assets/twitter.png" alt="x"/></a>
+  <a href='#'><img src="assets/ig.png" alt="e"/></a>
+  <a href='#'><img src="assets/fb.png" alt="e"/></a>
+  </div>
+      <div>
+  <p><a class="light" href="https://ksu.edu.sa">King Saud University</a></p>
+  <p><a class="light" href="https://ksu.edu.sa">Riyadh, Saudi Arabia</a></p>
+  <p><a href="tel:+966 508170164" class="light">+966 508170164</a></p>
+  <p><a href="tel:+966 508170164" class="light">+966 508170164</a></p>
+
+      </div>
+  </td>
+    </table>
+  </footer>
+        </div>
+
+
+
+
+
+    </form>
+</body>
+</html>
